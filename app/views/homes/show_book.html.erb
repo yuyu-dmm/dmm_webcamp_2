@@ -1,0 +1,15 @@
+
+<div class="create_status">
+    <%= flash[:notice]%>
+</div>
+<div class="notice">
+    <p>
+        <strong>Title:</strong><%= @book.title%>
+    </p>
+    <p>
+        <strong>Body:</strong><%= @book.body%>
+    </p>
+</div>
+<div class="change_page">
+    <%=link_to "Edit",edit_book_path(@book.id)%> | <%=link_to "Back",show_books_path%>
+</div>

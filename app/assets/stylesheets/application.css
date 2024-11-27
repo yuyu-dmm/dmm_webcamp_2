@@ -1,0 +1,85 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body.main{
+    margin: 33px;
+}
+.change_page{
+    font-size: 13px;
+}
+p,th,td{
+    font-size: 13px;
+    margin: 33px;
+}
+
+
+h2{
+    font-size: 18px;
+}
+h1{
+    font-size: 26px;
+}
+.button{
+    margin: 10px 0;
+}
+div.field_with_errors,div.error_title label{
+    padding: 2px;
+    display: inline-block;
+    background-color: red;
+}
+label{
+    font-size: 13px;
+}
+h2.error_count{
+    font-size: 13px;
+    margin: 0;
+    padding-left: 20px;
+    color: white;
+    background-color: #c00;
+
+}
+div.foam_box{
+    margin: 10px 0;
+}
+div.error_msg{
+    width: 450px;
+    border: 1px solid red;
+    background-color: #f0f0f0;
+}
+ul{
+    font-size: 13px;
+    padding: 20px 80px;
+}
+th,td{
+    padding: 1px 5px 7px;
+}
+a{
+    color: black;
+    
+}
+a:visited{
+    color: #666;
+}
+a:hover{
+    background-color: black;
+    color: white;
+}
+div.create_status{
+    font-size: 13px;
+    color: rgb(93, 155, 0);
+}
+div.create_status{
+    margin: 33px;
+}

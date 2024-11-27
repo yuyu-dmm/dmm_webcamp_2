@@ -1,0 +1,27 @@
+<%= form_with model: @book, url:show_book_path do |f| %>
+  <h2>Editing Book</h2>
+  <% if @book.errors.any?%>
+    <div class ="error_msg">
+      <h2 class="error_count"><%= @book.errors.count %> error prohibited this book from being saved:</h2>
+      <ul>
+        <% @book.errors.full_messages.each do |err_msg|%>
+          <li><%= err_msg %></li>
+        <%end%>
+      </ul>
+    </div>
+  <%end%>
+  <div class = "foam_box">
+    <div class="<%=@book.errors[:title].any? ? 'error_title ' : ''%>"><label>Title</label></div>
+    <div><%= f.text_field :title%></div>
+  </div>
+  <div class = "foam_box">
+    <div class="<%=@book.errors[:body].any? ? 'error_title' : ''%>"><label>Body</label></div>
+    <div><%= f.text_area :body%></div>
+  </div>
+  <div class="button">
+    <%= f.submit "Update Book"%>
+  </div>
+  <div class="change_page">
+    <%=link_to "Show",show_book_path(@book.id)%> | <%=link_to "Back",show_books_path%>
+  </div>
+<%end%>
